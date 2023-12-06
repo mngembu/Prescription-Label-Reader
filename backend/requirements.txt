@@ -1,0 +1,8 @@
+pdf2image==1.16.2
+pytesseract==0.3.10
+opencv_python==4.7.0.68
+numpy==1.23.0
+pandas[all]
+Pillow[all]
+fastapi[all]
+pytest[all]
