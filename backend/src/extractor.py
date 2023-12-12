@@ -16,5 +16,5 @@ def extract(file_path):
 
 
 if __name__ == '__main__':
-    data = extract('../resources/IMG-20231203-WA0012')
+    data = extract("resources/IMG-20231203-WA0010.jpg")
     print(data)
