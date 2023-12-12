@@ -1,4 +1,5 @@
 import re
+import outil
 
 class PrescriptionParser():
     def __init__(self, text):
@@ -7,11 +8,15 @@ class PrescriptionParser():
     def parse(self):
         prescription_name = self.get_field('prescription_name')
         dosage = (self.get_field('dosage').replace("GIVE", "TAKE")).lower().replace('\n\n', '')
-        refills = self.get_field('prefills')
+        refills = self.get_field('refills')
         expirydate = self.get_field('expirydate')
         
         message_text = f'Hello, as prescription for the drug {prescription_name}, {dosage}. It can be refilled {refills} times, on or before {expirydate}.'
-        return message_text
+        
+        speech = outil.text2speech(message_text)
+        
+        return speech
+    
     
     
     def get_field(self, field_name):
