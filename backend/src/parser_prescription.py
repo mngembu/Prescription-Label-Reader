@@ -16,8 +16,7 @@ class PrescriptionParser():
         speech = outil.text2speech(message_text)
         
         return speech
-    
-    
+                       
     
     def get_field(self, field_name):
         pattern = ''
@@ -39,9 +38,7 @@ class PrescriptionParser():
             
         
         
-    
-    
-    
+      
     
 if __name__ == "__main__":
     label_text = '''
