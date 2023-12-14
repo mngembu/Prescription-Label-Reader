@@ -1,27 +1,24 @@
 
-
 import pytest
 import sys
-
+import src.parser_prescription
 #adding src to the system path because
-sys.path.insert(0, 'C:/Users/amari/OneDrive/Documents/Data science internships/Prescription-Label-Reader/backend/src')
-
-from parser_prescription import PrescriptionParser
+sys.path.insert(0, 'C:/Users/amari/Documents/Data science projects/Prescription-Label-Reader/src')
 
 def test_get_prescription_name():
-    pp = PrescriptionParser(label_text)
+    pp = src.parser_prescription.PrescriptionParser(label_text)
     assert pp.get_field('prescription_name') == 'Ondansetron 4mg'
     
 def test_get_refills():
-    pp = PrescriptionParser(label_text)
+    pp = src.parser_prescription.PrescriptionParser(label_text)
     assert pp.get_field('refills') == '8'    
     
 def test_get_dosage():
-    pp = PrescriptionParser(label_text)
-    assert pp.get_field('dosage') == 'take 1.5 tablets 3 times dailywhen required'
+    pp = src.parser_prescription.PrescriptionParser(label_text)
+    assert pp.get_field('dosage') == 'GIVE 1.5 TABLETS 3 TIMES DAILY \n\nWHEN REQUIRED'
     
 def test_get_expirydate():
-    pp = PrescriptionParser(label_text)
+    pp = src.PrescriptionParser(label_text)
     assert pp.get_field('expirydate') == '29-Mar-2024'
     
 

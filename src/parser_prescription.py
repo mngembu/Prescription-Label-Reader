@@ -1,5 +1,5 @@
 import re
-import outil
+import src.outil
 
 class PrescriptionParser():
     def __init__(self, text):
@@ -13,7 +13,7 @@ class PrescriptionParser():
         
         message_text = f'Hello, as prescription for the drug {prescription_name}, {dosage}. It can be refilled {refills} times, on or before {expirydate}.'
         
-        speech = outil.text2speech(message_text)
+        speech = src.outil.text2speech(message_text)
         
         return speech
                        

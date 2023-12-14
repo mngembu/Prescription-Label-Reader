@@ -22,5 +22,5 @@ def extract(file_path):
 
 
 if __name__ == '__main__':
-    extract("resources/IMG-20231203-WA0010.jpg")
+    extract("../resources/IMG-20231203-WA0010.jpg")
     
