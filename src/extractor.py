@@ -1,24 +1,30 @@
 from PIL import Image
 import pytesseract
-import outil
+import src.outil
 
-from parser_prescription import PrescriptionParser
+from src.loggings import logger
+from src.parser_prescription import PrescriptionParser
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
+
 def extract(file_path):
     # extracting text from the image
-    if file_path.endswith ('.jpg'):
+    if file_path.endswith('.jpg'):
         img = Image.open(file_path)
-        processed_image = outil.preprocess_image(img)
+        processed_image = src.outil.preprocess_image(img)
         text = pytesseract.image_to_string(processed_image, lang='eng')
 
+        logger.info("Text message created")
+
     # extracting fields from the text and converting to speech  
-        output_voice = PrescriptionParser(text).parse()                      
+        output_voice = PrescriptionParser(text).parse()
+
+        logger.info("Voice message created and saved to file")
+
     else:
         raise Exception(f"Invalid file format")
     return output_voice
-
 
 
 if __name__ == '__main__':

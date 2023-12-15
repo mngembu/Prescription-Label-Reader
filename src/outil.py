@@ -6,8 +6,9 @@ from google.cloud import texttospeech
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/amari/OneDrive/Documents/Data science projects/Prescription-Label-Reader/backend/centered-flow-407119-b4e5527bb781.json"
 
+
 def preprocess_image(img):
-    # Prepocessing image for better visibility
+    # Preprocessing image for better visibility
     gray = cv2.cvtColor(np.array(img), 
                         cv2.COLOR_BGR2GRAY)   
     resized = cv2.resize(gray, 
