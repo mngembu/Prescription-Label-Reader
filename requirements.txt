@@ -9,3 +9,4 @@ pytest[all]
 google-cloud-texttospeech[all]
 pytest[all]
 uvicorn
+-e .
