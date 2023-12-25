@@ -40,7 +40,7 @@ class PrescriptionParser():
         
       
     
-if __name__ == "__main__":
+#if __name__ == "__main__":
     label_text = '''
 Gateway Pharmacy . {780). 466- -6337_
 942 3803 Calgary Trail, Edmonton, AB Ted 5M8_
@@ -63,5 +63,5 @@ All Refills Expire: 29-Mar-2024
 '''
     
     
-    pp = PrescriptionParser(label_text)
-    print(pp.parse())
+    #pp = PrescriptionParser(label_text)
+    #print(pp.parse())

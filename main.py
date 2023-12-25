@@ -4,6 +4,8 @@ import uvicorn
 from src.extractor import extract
 import uuid
 import os
+import sys
+from src.exception import CustomException
 from PIL import Image
 
 app = FastAPI()
@@ -23,11 +25,14 @@ def speech_from_doc(file: UploadFile):     # UploadFile (specific to FastAPI) is
     try:
         data = extract(file_path)
     except Exception as e:
-        data = {'error': str(e)}
+        #data = {'error': str(e)}
+        raise CustomException(e, sys)
 
     # delete the temporary image file after each run
     if os.path.exists(file_path):
         os.remove(file_path)
+
+    logger.info("Voice message created and saved to file")
 
     return data
 

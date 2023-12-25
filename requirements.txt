@@ -4,9 +4,9 @@ opencv_python==4.7.0.68
 numpy==1.23.0
 pandas[all]
 Pillow[all]
-fastapi[all]
+fastapi==0.103.2
 pytest[all]
 google-cloud-texttospeech[all]
 pytest[all]
 uvicorn
--e .
+#-e .

@@ -17,3 +17,8 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger("labelreaderLogger")
+
+
+#testing the logging code
+#if __name__ == "__main__":
+    #logger.info("Logging has started")

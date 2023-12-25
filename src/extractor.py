@@ -24,9 +24,10 @@ def extract(file_path):
 
     else:
         raise Exception(f"Invalid file format")
+
     return output_voice
 
 
-if __name__ == '__main__':
-    extract("../resources/IMG-20231203-WA0010.jpg")
+#if __name__ == '__main__':
+    #extract("../resources/IMG-20231203-WA0010.jpg")
     
