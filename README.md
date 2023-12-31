@@ -26,10 +26,6 @@ This project is used especially in the health sector by medical doctors when pre
 
 To deploy this project run
 
-```bash
-  npm run deploy
-```
-
 
 ```bash
   pip install -r requirements.txt
@@ -46,7 +42,13 @@ Insert gif or link to demo
 
 ## Optimizations
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+
+I used built-in functions and libraries instead of reinventing the wheel to boost the performance of the Python code.
+
+I optimized data structures by using a dictionary where appropriate to optimize code execution. This is especially seen in the file, parser_prescription.py.
+
+I applied code refactoring to reduce the size of the code, thereby improving it and making it easy to maintain. This is especially seen in the file, parser_prescription.py. 
+
 
 
 ## Documentation
@@ -56,4 +58,9 @@ What optimizations did you make in your code? E.g. refactors, performance improv
 
 ## 🚀 About Me
 I'm a full stack developer...
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
