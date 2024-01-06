@@ -17,31 +17,24 @@ everything about your medication. Dosage info can also be tracked and shared wit
 This project is used especially in the health sector by medical doctors when prescribing medication for patients.
 
 
-## Authors
-
-- https://github.com/mngembu
-
-
 ## Deployment
 
-To deploy this project run
-
+To deploy this project run:
 
 ```bash
   pip install -r requirements.txt
 ```
-
-
 ```bash
   python main.py
 ```
+
+
 ## Demo
 
 Insert gif or link to demo
 
 
 ## Optimizations
-
 
 I used built-in functions and libraries instead of reinventing the wheel to boost the performance of the Python code.
 
@@ -50,17 +43,24 @@ I optimized data structures by using a dictionary where appropriate to optimize 
 I applied code refactoring to reduce the size of the code, thereby improving it and making it easy to maintain. This is especially seen in the file, parser_prescription.py. 
 
 
+## Screenshots
 
-## Documentation
+![IMG-20231203-WA0010](https://github.com/mngembu/Prescription-Label-Reader/assets/56229226/50b2156d-a6b1-45a7-a575-3a6fece2901f)
 
-[Documentation](https://linktodocumentation)
+
+image path:https://github.com/mngembu/Prescription-Label-Reader/blob/main/resources/IMG-20231203-WA0010.jpg
+
+audio path: https://github.com/mngembu/Prescription-Label-Reader/blob/main/output.mp3
+
+
+## Author
+
+Mary Ara N.
+- https://github.com/mngembu
 
 
 ## 🚀 About Me
-I'm a full stack developer...
+I'm a dynamic data scientist with, not only, a sound experience in Python projects involving Machine Learning, Web Scraping, Natural Language Processing and Computer Vision; but also considerable expertise in building BI solutions using Power BI and SQL.
 
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
