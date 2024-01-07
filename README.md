@@ -29,7 +29,7 @@ In command prompt, clone to a local repository, then run:
 
 ## Demo
 
-[Insert gif or link to demo](https://github.com/mngembu/Prescription-Label-Reader/blob/main/Documents/2024-01-06%2020-12-16.mp4)
+https://github.com/mngembu/Prescription-Label-Reader/blob/main/Documents/2024-01-06%2020-12-16.mp4
 
 
 ## Optimizations
