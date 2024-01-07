@@ -17,21 +17,19 @@ everything about your medication. Dosage info can also be tracked and shared wit
 This project is used especially in the health sector by medical doctors when prescribing medication for patients.
 
 
-## Deployment
+## Local Deployment
 
-To deploy this project run:
+In command prompt, clone to a local repository, then run:
 
-```bash
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
 ```
-```bash
-  python main.py
+  python -m main
 ```
 
 
 ## Demo
 
-Insert gif or link to demo
+https://github.com/mngembu/Prescription-Label-Reader/blob/main/Documents/2024-01-06%2020-12-16.mp4
 
 
 ## Optimizations
