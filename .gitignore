@@ -1,3 +1,7 @@
+#This project
+PLReader_key.pem
+PLReader_key_private.ppk
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
