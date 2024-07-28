@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# And also
+PLReader_Key_private.ppk
+PLReader_Key.pem
+
 # C extensions
 *.so
 
